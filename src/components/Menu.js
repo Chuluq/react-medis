@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Sidebar from './Sidebar';
+import Notification from './Notification'
 
 class Menu extends Component {
   render() {
@@ -7,7 +8,7 @@ class Menu extends Component {
       /* <!--Container--> */
       <div className="container-fluid d-flex p-0">
         {/* <!--Sidebar--> */}
-        <Sidebar />
+          <Sidebar />
         {/* <!--Sidebar-end--> */}
 
         {/* <!--Main-panel--> */}
@@ -180,15 +181,7 @@ class Menu extends Component {
             {/* <!--Modal for delete end--> */}
 
             {/* <!--Notification Message--> */}
-            <div className="notification">
-                <div className="progress-bar">
-                    <div id="progress-fill"></div>
-                </div>
-                <span className="float-right mr-2">
-                    <i className="mdi mdi-close"></i>
-                </span>
-                <div className="notification-message"></div>
-            </div>
+              <Notification />
             {/* <!--Notification Message end--> */}
             
             <div className="row">

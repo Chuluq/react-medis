@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Link } from 'react-router-dom'
 
 class Sidebar extends Component {
   render() {
@@ -21,10 +22,10 @@ class Sidebar extends Component {
               Account
             </li>
             <li className="nav-item" id="settings">
-              <a href="profile-setting.html" className="nav-link ">
+              <Link to="/" className="nav-link ">
                 <i className="menu-icon mdi loading"></i>
                 <span className="loading"></span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item" id="administartion">
               <a className="nav-link" data-toggle="collapse" href="#admin-menu" aria-expanded="false" aria-controls="admin-menu">
