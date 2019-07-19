@@ -1,27 +1,27 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import ProfileSetting from './ProfileSetting'
-import Menu from './Menu'
-import UserManagement from './UserManagement'
-import Practicioner from './Practicioner'
-import PracticionerView from './PracticionerView'
+import Menu from './menus/Menu'
+import UserManagement from './user/UserManagement'
+import Practitioner from './practitioner/Practitioner'
+import PractitionerView from './practitioner/PractitionerView'
+import AddPractitioner from './practitioner/AddPractitioner'
 import NotFound from './NotFound';
 
-class Main extends Component {
-  render() {
-    return (
-      <div>
-        <Switch>
-          <Route exact path='/' component={ProfileSetting} />
-          <Route path='/menu' component={Menu} />
-          <Route path='/user-management' component={UserManagement} />
-          <Route exact path='/practicioner' component={Practicioner} />
-          <Route path='/practicioner/view' component={PracticionerView} />
-          <Route component={NotFound} />
-        </Switch>    
-      </div>
-    )
-  }
+function Main() {
+  return (
+    <div>
+      <Switch>
+        <Route exact path='/' component={ProfileSetting} />
+        <Route path='/menu' component={Menu} />
+        <Route path='/user' component={UserManagement} />
+        <Route path='/practitioner' component={Practitioner} />
+        <Route path='/practitioner-view' component={PractitionerView} />
+        <Route path='/practitioner-add' component={AddPractitioner} />
+        <Route component={NotFound} />
+      </Switch>    
+    </div>
+  )
 }
 
 export default Main

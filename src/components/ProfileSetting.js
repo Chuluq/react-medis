@@ -7,8 +7,6 @@ class ProfileSetting extends Component {
     return (
       <div className="container-fluid d-flex p-0">
         <Sidebar />
-
-        {/* Main Panel */}
         <div className="main-panel p-5">
           <Notification />
           <div className="row">
@@ -17,8 +15,7 @@ class ProfileSetting extends Component {
                 <div className="card-body">
                   <div className="row mb-3">
                     <div className="col-md-12 px-4">
-                      <h2 className="card-title mb-4">Profile Setting
-                      </h2>
+                      <h2 className="card-title mb-4">Profile Setting</h2>
                     </div>
                   </div>
                   <div className="row px-5">
