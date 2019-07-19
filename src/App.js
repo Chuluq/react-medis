@@ -1,10 +1,10 @@
 import React from 'react';
-import Menu from './components/Menu'
+import Main from './components/Main'
 
 function App() {
   return (
     <div>
-      <Menu />
+      <Main />
     </div>
   );
 }

@@ -4,14 +4,14 @@ class Notification extends Component {
   render() {
     return (
       <div>
-        <div class="notification">
-          <div class="progress-bar">
+        <div className="notification">
+          <div className="progress-bar">
             <div id="progress-fill"></div>
           </div>
-          <span class="float-right mr-2">
-            <i class="mdi mdi-close"></i>
+          <span className="float-right mr-2">
+            <i className="mdi mdi-close"></i>
           </span>
-          <div class="notification-message"></div>
+          <div className="notification-message"></div>
         </div>      
       </div>
     )

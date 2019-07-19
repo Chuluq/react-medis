@@ -10,7 +10,7 @@ class Practicioner extends Component {
         <Sidebar />
         
         {/* Main Panel */}
-        <div class="main-panel p-5">
+        <div className="main-panel p-5">
           <ModalDeleteOpex />
           <Notification />
           <div className="row">

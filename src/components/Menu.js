@@ -15,12 +15,12 @@ class Menu extends Component {
         <div className="main-panel p-5">
 
             {/* <!--Modal for add menu--> */}
-            <div className="modal fade" id="add-menu" tabindex="-1" role="dialog" aria-labelledby="add-menu" aria-hidden="true">
+            <div className="modal fade" id="add-menu" tabIndex="-1" role="dialog" aria-labelledby="add-menu" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
                             <h5 className="modal-title" id="create-group-title">Add New Menu</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
@@ -87,7 +87,7 @@ class Menu extends Component {
             {/* <!--Modal for add menu end--> */}
 
             {/* <!--Modal for edit menu--> */}
-            <div className="modal fade" id="edit-menu" tabindex="-1" role="dialog" aria-labelledby="edit-menu" aria-hidden="true">
+            <div className="modal fade" id="edit-menu" tabIndex="-1" role="dialog" aria-labelledby="edit-menu" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
@@ -110,7 +110,7 @@ class Menu extends Component {
                                     <label>Menu Icon</label>
                                     <input type="text" className="form-control form-control-md" required="" />
                                 </div>
-                                <div class="form-group p-0">
+                                <div className="form-group p-0">
                                     <label>Menu Level</label>
                                     <select className="form-control form-control-sm select2" style={{width: '100%'}}>
                                         <option></option>
@@ -159,7 +159,7 @@ class Menu extends Component {
             {/* <!--Modal for add menu end--> */}
 
             {/* <!--Modal for delete menu--> */}
-            <div className="modal fade" id="delete-menu" tabindex="-1" role="dialog" aria-labelledby="delete-menu" aria-hidden="true">
+            <div className="modal fade" id="delete-menu" tabIndex="-1" role="dialog" aria-labelledby="delete-menu" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
@@ -264,7 +264,7 @@ class Menu extends Component {
                                             <tr>
                                                 <td>Administration</td>
                                                 <td>Configuration segement</td>
-                                                <td><span class="badge badge-success">Enable</span></td>
+                                                <td><span className="badge badge-success">Enable</span></td>
                                                 <td className="text-center">
                                                     <a href="#" className="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                         <i className="mdi mdi-dots-horizontal"></i>

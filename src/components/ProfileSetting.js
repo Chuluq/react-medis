@@ -9,7 +9,7 @@ class ProfileSetting extends Component {
         <Sidebar />
 
         {/* Main Panel */}
-        <div class="main-panel p-5">
+        <div className="main-panel p-5">
           <Notification />
           <div className="row">
             <div className="col-md-12">
@@ -43,34 +43,34 @@ class ProfileSetting extends Component {
                       </div>
                       <div className="form-group p-0">
                         <label>User Name</label>
-                        <input type="text" name="" className="form-control form-control-sm" value="fatkhulkarim" readonly="true" />
+                        <input type="text" name="" className="form-control form-control-sm" value="fatkhulkarim" readOnly={true} />
                       </div>
-                      <div class="form-group p-0">
+                      <div className="form-group p-0">
                         <label>Fullname</label>
-                        <input type="text" name="" className="form-control form-control-sm" value="Fatkhul Karim" readonly="true" />
+                        <input type="text" name="" className="form-control form-control-sm" value="Fatkhul Karim" readOnly={true} />
                       </div>
                       <div className="form-group p-0">
                         <label>Email</label>
-                        <input type="text" name="" className="form-control form-control-sm" value="fatkhul.solusi247.com" readonly="true" />
+                        <input type="text" name="" className="form-control form-control-sm" value="fatkhul.solusi247.com" readOnly={true} />
                       </div>
-                      <div class="form-group p-0">
+                      <div className="form-group p-0">
                         <label>Phone</label>
-                        <input type="text" name="" className="form-control form-control-sm" value="087741434432" readonly="true" />
+                        <input type="text" name="" className="form-control form-control-sm" value="087741434432" readOnly={true} />
                       </div>
                       <div className="col-md-12 px-0">
                         <div className="form-title">Change Password</div>
                       </div>
                       <div className="form-group p-0">
                         <label>Current Password</label>
-                        <input type="password" name="" className="form-control form-control-sm" readonly="true" />
+                        <input type="password" name="" className="form-control form-control-sm" readOnly={true} />
                       </div>
                       <div className="form-group p-0">
                         <label>New Password</label>
-                        <input type="password" name="" className="form-control form-control-sm" readonly="true" />
+                        <input type="password" name="" className="form-control form-control-sm" readOnly={true} />
                       </div>
                       <div className="form-group p-0">
                         <label>Retype New Password</label>
-                        <input type="password" name="" className="form-control form-control-sm" readonly="true" />
+                        <input type="password" name="" className="form-control form-control-sm" readOnly={true} />
                       </div>
 
                       <div className="form-group pt-2" id="button" style={{display: 'none'}}>

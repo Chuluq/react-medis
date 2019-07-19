@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class ModalDeleteOpex extends Component {
   render() {
     return (
-      <div className="modal fade" id="delete-patient" tabindex="-1" role="dialog" aria-labelledby="delete-patient" aria-hidden="true">
+      <div className="modal fade" id="delete-patient" tabIndex="-1" role="dialog" aria-labelledby="delete-patient" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered" role="document">
           <div className="modal-content">
             <div className="modal-header">
