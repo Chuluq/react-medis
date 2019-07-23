@@ -47,7 +47,7 @@ class AddMenu extends Component {
                 <div className="form-group p-0">
                   <label style={{display: 'block'}}>Config</label>
                   <label className="container-checkbox d-inline mr-3">View
-                    <input type="checkbox" checked="checked" name="check" />
+                    <input type="checkbox" defaultChecked name="check" />
                     <span className="checkmark"></span>
                   </label>
                   <label className="container-checkbox d-inline mr-3">Insert
@@ -55,7 +55,7 @@ class AddMenu extends Component {
                     <span className="checkmark"></span>
                   </label>
                   <label className="container-checkbox d-inline mr-3">Update
-                    <input type="checkbox" checked="checked" name="check" />
+                    <input type="checkbox" defaultChecked name="check" />
                     <span className="checkmark"></span>
                   </label>
                   <label className="container-checkbox d-inline mr-3">Delete

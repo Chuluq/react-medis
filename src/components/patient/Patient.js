@@ -4,7 +4,7 @@ import Sidebar from '../Sidebar'
 import ModalDeleteOpex from '../ModalDeleteOpex'
 import Notification from '../Notification'
 
-function Practitioner() {
+function Patient() {
   return (
     <div className="container-fluid d-flex p-0">
       <Sidebar />
@@ -17,9 +17,9 @@ function Practitioner() {
               <div className="card-body">
                 <div className="row mb-3">
                   <div className="col-md-12 px-4">
-                    <h2 className="card-title mb-4">Practitioner List
+                    <h2 className="card-title mb-4">Patient List
                       <span className="float-right">
-                        <Link className="btn btn-sm btn-success" to="/practitioner-add">Add New Practitioner</Link>
+                        <Link className="btn btn-sm btn-success" to="/patient-add">Add New Patient</Link>
                       </span>
                     </h2>
                   </div>
@@ -198,4 +198,4 @@ function Practitioner() {
   )
 }
 
-export default Practitioner
+export default Patient

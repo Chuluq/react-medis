@@ -3,6 +3,9 @@ import { Switch, Route } from 'react-router-dom'
 import ProfileSetting from './ProfileSetting'
 import Menu from './menus/Menu'
 import UserManagement from './user/UserManagement'
+import Patient from './patient/Patient'
+import PatientView from './patient/PatientView'
+import AddPatientLogic from './patient/AddPatientLogic'
 import Practitioner from './practitioner/Practitioner'
 import PractitionerView from './practitioner/PractitionerView'
 import AddPractitioner from './practitioner/AddPractitioner'
@@ -15,6 +18,9 @@ function Main() {
         <Route exact path='/' component={ProfileSetting} />
         <Route path='/menu' component={Menu} />
         <Route path='/user' component={UserManagement} />
+        <Route path='/patient' component={Patient} />
+        <Route path="/patient-view" component={PatientView} />
+        <Route path='/patient-add' component={AddPatientLogic} />
         <Route path='/practitioner' component={Practitioner} />
         <Route path='/practitioner-view' component={PractitionerView} />
         <Route path='/practitioner-add' component={AddPractitioner} />

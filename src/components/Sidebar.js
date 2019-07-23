@@ -54,10 +54,10 @@ function Sidebar() {
             </a>
           </li>
           <li className="nav-item" id="patient">
-            <a className="nav-link" href="patient.html">
+            <Link className="nav-link" to="/patient">
               <i className="menu-icon mdi loading"></i>
               <span className="loading"></span>
-            </a>
+            </Link>
           </li>
           <li className="nav-item" id="practitioner">
             <Link className="nav-link" to="/practitioner">
