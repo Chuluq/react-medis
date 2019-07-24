@@ -67,7 +67,7 @@ class AddPatientLogic extends Component {
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
-    console.log(this.state)
+    this.handleClick = this.handleClick.bind(this)
   }
 
   handleChange(event) {
@@ -80,14 +80,17 @@ class AddPatientLogic extends Component {
     this.setState({
       [name]: value
     })
-    console.log(this.state)
   }
 
-  // handleClick(event) {
-  //   const { name } = event.target
+  handleClick() {
+    var patient = this.state
 
-  //   sessionStorage(name, this.state)
-  // }
+    window.sessionStorage.setItem("patientData", JSON.stringify(patient))
+
+    var patientData = sessionStorage.getItem("patientData")
+
+    console.log(JSON.parse(patientData))
+  }
 
   handleSubmit(event) {    
     event.preventDefault()

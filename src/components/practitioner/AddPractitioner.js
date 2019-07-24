@@ -42,14 +42,14 @@ class AddPractitioner extends Component {
                                     <div className="form-group p-0">
                                       <label>Identifier Use</label>
                                       <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                        <option></option>
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                        <option>Option 4</option>
-                                        <option>Option 5</option>
-                                        <option>Option 6</option>
-                                        <option>Option 7</option>
+                                        <option value=""></option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                        <option value="option4">Option 4</option>
+                                        <option value="option5">Option 5</option>
+                                        <option value="option6">Option 6</option>
+                                        <option value="option7">Option 7</option>
                                       </select>
                                     </div>
                                     <div className="form-group p-0">
@@ -61,14 +61,14 @@ class AddPractitioner extends Component {
                                     <div className="form-group p-0">
                                       <label>Identifier Type</label>
                                       <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                        <option></option>
-                                        <option >Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                        <option>Option 4</option>
-                                        <option>Option 5</option>
-                                        <option>Option 6</option>
-                                        <option>Option 7</option>
+                                        <option value=""></option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                        <option value="option4">Option 4</option>
+                                        <option value="option5">Option 5</option>
+                                        <option value="option6">Option 6</option>
+                                        <option value="option7">Option 7</option>
                                       </select>
                                     </div>
                                     <div className="form-group p-0">
@@ -85,23 +85,23 @@ class AddPractitioner extends Component {
                                       <div className="form-group p-0">
                                         <label>Name Use</label>
                                         <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                          <option></option>
-                                          <option>Option 1</option>
-                                          <option>Option 2</option>
-                                          <option>Option 3</option>
-                                          <option>Option 4</option>
-                                          <option>Option 5</option>
-                                          <option>Option 6</option>
-                                          <option>Option 7</option>
+                                          <option value=""></option>
+                                          <option value="option1">Option 1</option>
+                                          <option value="option2">Option 2</option>
+                                          <option value="option3">Option 3</option>
+                                          <option value="option4">Option 4</option>
+                                          <option value="option5">Option 5</option>
+                                          <option value="option6">Option 6</option>
+                                          <option value="option7">Option 7</option>
                                         </select>
                                       </div>
                                       <div className="form-group p-0">
                                         <label>Full Name</label>
-                                        <input type="text" name="" class="form-control form-control-sm" />
+                                        <input type="text" name="" className="form-control form-control-sm" />
                                       </div>
-                                      <div class="form-group p-0">
+                                      <div className="form-group p-0">
                                         <label>Sufix</label>
-                                        <input type="text" name="" class="form-control form-control-sm" />
+                                        <input type="text" name="" className="form-control form-control-sm" />
                                       </div>
                                     </div>
                                     <div className="col-md-6">
@@ -127,14 +127,14 @@ class AddPractitioner extends Component {
                                       <div className="form-group p-0">
                                         <label>Gender</label>
                                         <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                          <option></option>
-                                          <option>Option 1</option>
-                                          <option>Option 2</option>
-                                          <option>Option 3</option>
-                                          <option>Option 4</option>
-                                          <option>Option 5</option>
-                                          <option>Option 6</option>
-                                          <option>Option 7</option>
+                                          <option value=""></option>
+                                          <option value="option1">Option 1</option>
+                                          <option value="option2">Option 2</option>
+                                          <option value="option3">Option 3</option>
+                                          <option value="option4">Option 4</option>
+                                          <option value="option5">Option 5</option>
+                                          <option value="option6">Option 6</option>
+                                          <option value="option7">Option 7</option>
                                         </select>
                                       </div>     
                                       </div>
@@ -153,14 +153,14 @@ class AddPractitioner extends Component {
                                         <div className="form-group p-0">
                                           <label>Contact Point System</label>
                                           <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                            <option></option>
-                                            <option>Option 1</option>
-                                            <option>Option 2</option>
-                                            <option>Option 3</option>
-                                            <option>Option 4</option>
-                                            <option>Option 5</option>
-                                            <option>Option 6</option>
-                                            <option>Option 7</option>
+                                            <option value=""></option>
+                                            <option value="option1">Option 1</option>
+                                            <option value="option2">Option 2</option>
+                                            <option value="option3">Option 3</option>
+                                            <option value="option4">Option 4</option>
+                                            <option value="option5">Option 5</option>
+                                            <option value="option6">Option 6</option>
+                                            <option value="option7">Option 7</option>
                                           </select>
                                         </div>
                                         <div className="form-group p-0">
@@ -170,7 +170,7 @@ class AddPractitioner extends Component {
                                         <div className="form-group p-0">
                                           <label className="d-block" style={{marginTop: '20px !important'}}>Practitioner Record Active</label>
                                           <label className="container-radio d-inline">Yes
-                                            <input type="radio" checked="checked" name="radio" />
+                                            <input type="radio" defaultChecked name="radio" />
                                             <span className="checkmark-radio"></span>
                                           </label>
                                           <label className="container-radio d-inline">No
@@ -187,14 +187,14 @@ class AddPractitioner extends Component {
                                         <div className="form-group p-0">
                                           <label>Contact Point Use</label>
                                           <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                            <option></option>
-                                            <option>Option 1</option>
-                                            <option>Option 2</option>
-                                            <option>Option 3</option>
-                                            <option>Option 4</option>
-                                            <option>Option 5</option>
-                                            <option>Option 6</option>
-                                            <option>Option 7</option>
+                                            <option value=""></option>
+                                            <option value="option1">Option 1</option>
+                                            <option value="option2">Option 2</option>
+                                            <option value="option3">Option 3</option>
+                                            <option value="option4">Option 4</option>
+                                            <option value="option5">Option 5</option>
+                                            <option value="option6">Option 6</option>
+                                            <option value="option7">Option 7</option>
                                           </select>
                                         </div>
                                         <div className="form-group p-0">
@@ -204,14 +204,14 @@ class AddPractitioner extends Component {
                                         <div className="form-group p-0">
                                           <label>Photo language</label>
                                           <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                            <option></option>
-                                            <option>Option 1</option>
-                                            <option>Option 2</option>
-                                            <option>Option 3</option>
-                                            <option>Option 4</option>
-                                            <option>Option 5</option>
-                                            <option>Option 6</option>
-                                            <option>Option 7</option>
+                                            <option value=""></option>
+                                            <option value="option1">Option 1</option>
+                                            <option value="option2">Option 2</option>
+                                            <option value="option3">Option 3</option>
+                                            <option value="option4">Option 4</option>
+                                            <option value="option5">Option 5</option>
+                                            <option value="option6">Option 6</option>
+                                            <option value="option7">Option 7</option>
                                           </select>
                                         </div>
                                       </div>
@@ -234,40 +234,40 @@ class AddPractitioner extends Component {
                                       <div className="form-group p-0">
                                         <label>Address Use</label>
                                         <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                          <option></option>
-                                          <option>Option 1</option>
-                                          <option>Option 2</option>
-                                          <option>Option 3</option>
-                                          <option>Option 4</option>
-                                          <option>Option 5</option>
-                                          <option>Option 6</option>
-                                          <option>Option 7</option>
+                                          <option value=""></option>
+                                          <option value="option1">Option 1</option>
+                                          <option value="option2">Option 2</option>
+                                          <option value="option3">Option 3</option>
+                                          <option value="option4">Option 4</option>
+                                          <option value="option5">Option 5</option>
+                                          <option value="option6">Option 6</option>
+                                          <option value="option7">Option 7</option>
                                         </select>
                                       </div>
-                                      <div class="form-group p-0">
+                                      <div className="form-group p-0">
                                         <label>Country</label>
                                         <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                          <option></option>
-                                          <option>Option 1</option>
-                                          <option>Option 2</option>
-                                          <option>Option 3</option>
-                                          <option>Option 4</option>
-                                          <option>Option 5</option>
-                                          <option>Option 6</option>
-                                          <option>Option 7</option>
+                                        <option value=""></option>
+                                          <option value="option1">Option 1</option>
+                                          <option value="option2">Option 2</option>
+                                          <option value="option3">Option 3</option>
+                                          <option value="option4">Option 4</option>
+                                          <option value="option5">Option 5</option>
+                                          <option value="option6">Option 6</option>
+                                          <option value="option7">Option 7</option>
                                         </select>
                                       </div>
                                       <div className="form-group p-0">
                                         <label>City</label>
                                         <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                          <option></option>
-                                          <option>Option 1</option>
-                                          <option>Option 2</option>
-                                          <option>Option 3</option>
-                                          <option>Option 4</option>
-                                          <option>Option 5</option>
-                                          <option>Option 6</option>
-                                          <option>Option 7</option>
+                                          <option value=""></option>
+                                          <option value="option1">Option 1</option>
+                                          <option value="option2">Option 2</option>
+                                          <option value="option3">Option 3</option>
+                                          <option value="option4">Option 4</option>
+                                          <option value="option5">Option 5</option>
+                                          <option value="option6">Option 6</option>
+                                          <option value="option7">Option 7</option>
                                         </select>
                                       </div>
                                       <div className="form-group p-0">
@@ -280,43 +280,43 @@ class AddPractitioner extends Component {
                                       </div>
                                     </div>
                                     <div className="col-md-6">
-                                      <div classNAme="form-group p-0">
+                                      <div className="form-group p-0">
                                         <label>Address Type</label>
                                         <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                          <option></option>
-                                          <option>Option 1</option>
-                                          <option>Option 2</option>
-                                          <option>Option 3</option>
-                                          <option>Option 4</option>
-                                          <option>Option 5</option>
-                                          <option>Option 6</option>
-                                          <option>Option 7</option>
+                                          <option value=""></option>
+                                          <option value="option1">Option 1</option>
+                                          <option value="option2">Option 2</option>
+                                          <option value="option3">Option 3</option>
+                                          <option value="option4">Option 4</option>
+                                          <option value="option5">Option 5</option>
+                                          <option value="option6">Option 6</option>
+                                          <option value="option7">Option 7</option>
                                         </select>
                                       </div>
                                       <div className="form-group p-0">
                                         <label>State</label>
                                         <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                          <option></option>
-                                          <option>Option 1</option>
-                                          <option>Option 2</option>
-                                          <option>Option 3</option>
-                                          <option>Option 4</option>
-                                          <option>Option 5</option>
-                                          <option>Option 6</option>
-                                          <option>Option 7</option>
+                                          <option value=""></option>
+                                          <option value="option1">Option 1</option>
+                                          <option value="option2">Option 2</option>
+                                          <option value="option3">Option 3</option>
+                                          <option value="option4">Option 4</option>
+                                          <option value="option5">Option 5</option>
+                                          <option value="option6">Option 6</option>
+                                          <option value="option7">Option 7</option>
                                         </select>
                                       </div>
                                       <div className="form-group p-0">
                                         <label>District</label>
                                         <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                          <option></option>
-                                          <option>Option 1</option>
-                                          <option>Option 2</option>
-                                          <option>Option 3</option>
-                                          <option>Option 4</option>
-                                          <option>Option 5</option>
-                                          <option>Option 6</option>
-                                          <option>Option 7</option>
+                                          <option value=""></option>
+                                          <option value="option1">Option 1</option>
+                                          <option value="option2">Option 2</option>
+                                          <option value="option3">Option 3</option>
+                                          <option value="option4">Option 4</option>
+                                          <option value="option5">Option 5</option>
+                                          <option value="option6">Option 6</option>
+                                          <option value="option7">Option 7</option>
                                         </select>
                                       </div>
                                       <div className="form-group p-0">
@@ -346,34 +346,34 @@ class AddPractitioner extends Component {
                                 <form className="px-4 py-2"  method="post" action="">
                                   <div className="row">
                                     <div className="col-md-6">
-                                    <div classNAme="form-group p-0">
+                                    <div className="form-group p-0">
                                       <label>Identifier Use</label>
-                                      <select class="form-control form-control-sm select2" style={{width: '100%'}}>
-                                        <option></option>
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                        <option>Option 4</option>
-                                        <option>Option 5</option>
-                                        <option>Option 6</option>
-                                        <option>Option 7</option>
+                                      <select className="form-control form-control-sm select2" style={{width: '100%'}}>
+                                        <option value=""></option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                        <option value="option4">Option 4</option>
+                                        <option value="option5">Option 5</option>
+                                        <option value="option6">Option 6</option>
+                                        <option value="option7">Option 7</option>
                                       </select>
                                     </div>
                                     <div className="form-group p-0">
                                       <label>Identifier Qualification</label>
                                       <input type="text" name="" className="form-control form-control-sm" />
                                     </div>
-                                    <div class="form-group p-0">
+                                    <div className="form-group p-0">
                                       <label>Qualification</label>
                                       <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                        <option></option>
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                        <option>Option 4</option>
-                                        <option>Option 5</option>
-                                        <option>Option 6</option>
-                                        <option>Option 7</option>
+                                        <option value=""></option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                        <option value="option4">Option 4</option>
+                                        <option value="option5">Option 5</option>
+                                        <option value="option6">Option 6</option>
+                                        <option value="option7">Option 7</option>
                                       </select>
                                     </div>
                                     <div className="form-group p-0">
@@ -383,14 +383,14 @@ class AddPractitioner extends Component {
                                     <div className="form-group p-0">
                                       <label>Language</label>
                                       <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                        <option></option>
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                        <option>Option 4</option>
-                                        <option>Option 5</option>
-                                        <option>Option 6</option>
-                                        <option>Option 7</option>
+                                        <option value=""></option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                        <option value="option4">Option 4</option>
+                                        <option value="option5">Option 5</option>
+                                        <option value="option6">Option 6</option>
+                                        <option value="option7">Option 7</option>
                                       </select>
                                     </div>
                                   </div>
@@ -398,14 +398,14 @@ class AddPractitioner extends Component {
                                     <div className="form-group p-0">
                                       <label>Identifier Type</label>
                                       <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                        <option></option>
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                        <option>Option 4</option>
-                                        <option>Option 5</option>
-                                        <option>Option 6</option>
-                                        <option>Option 7</option>
+                                        <option value=""></option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                        <option value="option4">Option 4</option>
+                                        <option value="option5">Option 5</option>
+                                        <option value="option6">Option 6</option>
+                                        <option value="option7">Option 7</option>
                                       </select>
                                     </div>
                                     <div className="form-group p-0">
@@ -415,20 +415,20 @@ class AddPractitioner extends Component {
                                     <div className="form-group p-0">
                                       <label>Issuer</label>
                                       <select className="form-control form-control-sm select2" style={{width: '100%'}}>
-                                        <option></option>
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                        <option>Option 4</option>
-                                        <option>Option 5</option>
-                                        <option>Option 6</option>
-                                        <option>Option 7</option>
+                                        <option value=""></option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                        <option value="option4">Option 4</option>
+                                        <option value="option5">Option 5</option>
+                                        <option value="option6">Option 6</option>
+                                        <option value="option7">Option 7</option>
                                       </select>
                                     </div>
                                     <div className="form-group p-0">
                                       <label className="d-block" style={{marginTop: '20px !important'}}>Prefered</label>
                                       <label className="container-radio d-inline">True
-                                        <input type="radio" checked="checked" name="radio" />
+                                        <input type="radio" defaultChecked name="radio" />
                                         <span className="checkmark-radio"></span>
                                       </label>
                                       <label className="container-radio d-inline">False

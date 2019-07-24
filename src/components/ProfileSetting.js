@@ -30,7 +30,9 @@ class ProfileSetting extends Component {
                           <p className="text-muted" style={{fontSize: '13px', color: '#a0a0a0 !important'}}>
                             Group: User
                           </p>
-                          <button className="btn btn-success btn-sm" id="editProfile"><i className="mdi mdi-account-edit"></i>Edit My Profile</button>
+                          <button className="btn btn-success btn-sm" id="editProfile">
+                            <i className="mdi mdi-account-edit"></i>Edit My Profile
+                          </button>
                         </div>
                       </div>
                     </div>

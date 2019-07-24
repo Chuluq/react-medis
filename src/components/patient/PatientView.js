@@ -122,14 +122,14 @@ function PatientView() {
                                     <label className="d-block" style={{marginTop: '20px !important'}}>Multiple Birth Status</label>
                                     <label className="container-radio d-inline">False
                                       <input type="radio" defaultChecked />
-                                      <span class="checkmark-radio"></span>
+                                      <span className="checkmark-radio"></span>
                                     </label>
                                   </div>
                                   <div className="form-group p-0">
                                     <label className="d-block" style={{marginTop: '20px !important'}}>Deceased Status</label>
                                     <label className="container-radio d-inline">True
                                       <input type="radio" defaultChecked />
-                                      <span class="checkmark-radio"></span>
+                                      <span className="checkmark-radio"></span>
                                     </label>
                                   </div>
                                 </div>

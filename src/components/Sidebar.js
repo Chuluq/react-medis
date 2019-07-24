@@ -21,15 +21,13 @@ function Sidebar() {
             Account
           </li>
           <li className="nav-item" id="settings">
-            <Link to="/" className="nav-link ">
-              <i className="menu-icon mdi loading"></i>
-              <span className="loading"></span>
+            <Link to="/" className="nav-link "> 
+              Profile Settings
             </Link>
           </li>
           <li className="nav-item" id="administartion">
             <a className="nav-link" data-toggle="collapse" href="#admin-menu" aria-expanded="false" aria-controls="admin-menu">
-              <i className="menu-icon mdi loading"></i>
-                <span className="loading"></span>
+              <span>Administration</span>
               <i className="menu-arrow"></i>
             </a>
             <div className="collapse" id="admin-menu">
@@ -49,20 +47,17 @@ function Sidebar() {
           </li>
           <li className="nav-item" id="dashboard">
             <a className="nav-link" href="#">
-              <i className="menu-icon mdi loading"></i>
-              <span className="loading"></span>
+              Dashboard
             </a>
           </li>
           <li className="nav-item" id="patient">
             <Link className="nav-link" to="/patient">
-              <i className="menu-icon mdi loading"></i>
-              <span className="loading"></span>
+              Patient
             </Link>
           </li>
           <li className="nav-item" id="practitioner">
             <Link className="nav-link" to="/practitioner">
-              <i className="menu-icon mdi loading"></i>
-              <span className="loading"></span>
+              Practitioner
             </Link>
           </li>
           <hr style={{width:'85%'}} />

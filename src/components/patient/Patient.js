@@ -49,12 +49,15 @@ function Patient() {
                               <i className="mdi mdi-dots-horizontal"></i>
                               </a>
                               <div className=" dropright dropdown-menu">
-                              <a className="dropdown-item"  href="practitioner-view.html">
-                                  <i className="mdi mdi-eye mr-2"></i>Views</a>
-                              <div className="dropdown-divider"></div><a className="dropdown-item" href="add-practitioner.html">
-                                  <i className="mdi mdi-pencil mr-2"></i>Edit</a>
+                                <Link className="dropdown-item" to="/patient-view">
+                                  <i className="mdi mdi-eye mr-2"></i>Views
+                                </Link>
                               <div className="dropdown-divider"></div>
-                              <a className="dropdown-item" data-toggle="modal" data-target="#delete-patient" href="#">
+                                <Link className="dropdown-item" to="/patient-add">
+                                  <i className="mdi mdi-pencil mr-2"></i>Edit
+                                </Link>
+                              <div className="dropdown-divider"></div>
+                                <a className="dropdown-item" data-toggle="modal" data-target="#delete-patient" href="#">
                                   <i className="mdi mdi-delete mr-2"></i>Delete</a>
                               </div>
                           </td>
