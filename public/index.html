@@ -32,17 +32,11 @@
     <script src="dist/vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        $('.select2').select2({
-            placeholder: "Select an option",
-            allowClear: true
-        });
         $('#example').DataTable();
         $('#example2').DataTable();
         if ($(window).width() < 991.98){
                 $('#photo-profile').css('width','35px');
             };
-        $('#periode').daterangepicker();
-        $('#bod').daterangepicker();
 
         $("#next").click(function(){
             $(".nav-tabs a[href='#address']").tab("show")

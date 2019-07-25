@@ -48,7 +48,7 @@ function AddPatient(props) {
                                       value={props.data.idUse}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -71,11 +71,11 @@ function AddPatient(props) {
                                   <div className="form-group p-0">
                                     <label>Identifier Type</label>
                                     <select className="form-control form-control-sm select2" style={{width: '100%'}}
-                                      name="idUse"
+                                      name="idType"
                                       value={props.data.idType}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -107,7 +107,7 @@ function AddPatient(props) {
                                       value={props.data.nameUse}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -173,7 +173,7 @@ function AddPatient(props) {
                                       value={props.data.maritalStatus}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -200,7 +200,7 @@ function AddPatient(props) {
                                       value={props.data.gender}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -266,7 +266,7 @@ function AddPatient(props) {
                                       value={props.data.contactPoint}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -309,7 +309,7 @@ function AddPatient(props) {
                                       value={props.data.contactPointUse}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -334,7 +334,7 @@ function AddPatient(props) {
                                       value={props.data.photoLanguage}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -369,7 +369,7 @@ function AddPatient(props) {
                                       value={props.data.addressUse}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -386,7 +386,7 @@ function AddPatient(props) {
                                       value={props.data.country}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -403,7 +403,7 @@ function AddPatient(props) {
                                       value={props.data.city}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -438,7 +438,7 @@ function AddPatient(props) {
                                       value={props.data.addressType}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -455,7 +455,7 @@ function AddPatient(props) {
                                       value={props.data.state}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -472,7 +472,7 @@ function AddPatient(props) {
                                       value={props.data.district}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -529,7 +529,7 @@ function AddPatient(props) {
                                       value={props.data.nameUseR}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -595,7 +595,7 @@ function AddPatient(props) {
                                       value={props.data.genderR}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -620,7 +620,7 @@ function AddPatient(props) {
                                       value={props.data.contactSystemR}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -645,7 +645,7 @@ function AddPatient(props) {
                                       value={props.data.addressUseR}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -662,7 +662,7 @@ function AddPatient(props) {
                                       value={props.data.countryR}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -679,7 +679,7 @@ function AddPatient(props) {
                                       value={props.data.cityR}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -714,7 +714,7 @@ function AddPatient(props) {
                                       value={props.data.contactRoleR}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -739,7 +739,7 @@ function AddPatient(props) {
                                       value={props.data.contactUseR}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -764,7 +764,7 @@ function AddPatient(props) {
                                       value={props.data.addressTypeR}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -781,7 +781,7 @@ function AddPatient(props) {
                                       value={props.data.stateR}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -798,7 +798,7 @@ function AddPatient(props) {
                                       value={props.data.districtR}
                                       onChange={props.handleChange}
                                     >
-                                      <option value=""></option>
+                                      <option value="">--Select an option--</option>
                                       <option value="option1">Option 1</option>
                                       <option value="option2">Option 2</option>
                                       <option value="option3">Option 3</option>
@@ -890,7 +890,7 @@ function AddPatient(props) {
                                   <a className="btn btn-secondary btn-sm mr-2 " style={{color: '#fff !important'}}>
                                     Cancel
                                   </a>
-                                  <a className="btn btn-primary btn-sm " onClick={props.handleSubmit} style={{color: '#fff !important'}}>
+                                  <a className="btn btn-primary btn-sm " onClick={props.handleClick} style={{color: '#fff !important'}}>
                                     Save
                                   </a>
                                 </div>
