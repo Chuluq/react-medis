@@ -42,7 +42,6 @@ class AddPatientLogic extends Component {
       nameUseR: "",
       prefixR: "",
       suffixR: "",
-      fullNameR: "",
       familyNameR: "",
       givenNameR: "",
       genderR: "",
@@ -85,24 +84,29 @@ class AddPatientLogic extends Component {
   handleClick() {
     var patient = this.state
 
-    window.sessionStorage.setItem("patientData", JSON.stringify(patient))
-
-    var patientData = sessionStorage.getItem("patientData")
-
-    console.log(JSON.parse(patientData))
+    sessionStorage.setItem("patientData", JSON.stringify(patient))
   }
 
   handleSubmit(event) {    
     event.preventDefault()
+    // console.log(this.state)
 
-    axios.post('http://localhost:3000/api/patients', this.state)
+    var patientData = sessionStorage.getItem("patientData")
+    // console.log(JSON.parse(patientData))
+    patientData = JSON.parse(patientData)
+    patientData.languageR = this.state.languageR
+    patientData.prefered = this.state.prefered
+
+    console.log(patientData) 
+
+    axios.post('http://localhost:3000/api/patients', patientData)
       .then(response => {
         console.log(response.data)
         alert('data submitted')
       })
       .catch(error => {
         console.log(error)    
-        alert('error')      
+        alert(error)      
     })
   }
 

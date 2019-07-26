@@ -28,7 +28,7 @@ function AddPatient(props) {
                         <a className="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" id="others-tab" data-toggle="tab" href="#others" role="tab" aria-controls="others" aria-selected="false">Contact</a>
+                        <a className="nav-link" id="others-tab" data-toggle="tab" href="#others" role="tab" aria-controls="others" aria-selected="false">Others</a>
                       </li>
                     </ul>
                     <div className="tab-content" id="patientTabContent">
@@ -49,9 +49,9 @@ function AddPatient(props) {
                                       onChange={props.handleChange}
                                     >
                                       <option value="">--Select an option--</option>
-                                      <option value="option1">Option 1</option>
-                                      <option value="option2">Option 2</option>
-                                      <option value="option3">Option 3</option>
+                                      <option value="Passport">Passport</option>
+                                      <option value="National ID Card">National ID Card</option>
+                                      <option value="Kartu Keluarga">Kartu Keluarga</option>
                                       <option value="option4">Option 4</option>
                                       <option value="option5">Option 5</option>
                                       <option value="option6">Option 6</option>
@@ -76,8 +76,8 @@ function AddPatient(props) {
                                       onChange={props.handleChange}
                                     >
                                       <option value="">--Select an option--</option>
-                                      <option value="option1">Option 1</option>
-                                      <option value="option2">Option 2</option>
+                                      <option value="NIK">NIK</option>
+                                      <option value="Passport No">Passport No</option>
                                       <option value="option3">Option 3</option>
                                       <option value="option4">Option 4</option>
                                       <option value="option5">Option 5</option>
@@ -91,6 +91,7 @@ function AddPatient(props) {
                                       name="idPeriode"
                                       value={props.data.idPeriode}
                                       onChange={props.handleChange}
+                                      placeholder="ex: 2 years"
                                     />
                                   </div>
                                 </div>
@@ -108,8 +109,8 @@ function AddPatient(props) {
                                       onChange={props.handleChange}
                                     >
                                       <option value="">--Select an option--</option>
-                                      <option value="option1">Option 1</option>
-                                      <option value="option2">Option 2</option>
+                                      <option value="Real Name">Real Name</option>
+                                      <option value="Alias">Alias</option>
                                       <option value="option3">Option 3</option>
                                       <option value="option4">Option 4</option>
                                       <option value="option5">Option 5</option>
@@ -131,6 +132,7 @@ function AddPatient(props) {
                                       name="suffix"
                                       value={props.data.suffix}
                                       onChange={props.handleChange}
+                                      placeholder="ex: B.Sc."
                                     />
                                   </div>
                                 </div>
@@ -141,6 +143,7 @@ function AddPatient(props) {
                                       name="prefix"
                                       value={props.data.prefix}
                                       onChange={props.handleChange}
+                                      placeholder="ex: Mr"
                                     />
                                   </div>
                                   <div className="form-group p-0">
@@ -174,13 +177,8 @@ function AddPatient(props) {
                                       onChange={props.handleChange}
                                     >
                                       <option value="">--Select an option--</option>
-                                      <option value="option1">Option 1</option>
-                                      <option value="option2">Option 2</option>
-                                      <option value="option3">Option 3</option>
-                                      <option value="option4">Option 4</option>
-                                      <option value="option5">Option 5</option>
-                                      <option value="option6">Option 6</option>
-                                      <option value="option7">Option 7</option>
+                                      <option value="Single">Single</option>
+                                      <option value="Married">Married</option>
                                     </select>
                                   </div>
                                   <div className="form-group p-0">
@@ -189,6 +187,7 @@ function AddPatient(props) {
                                       name="bod"
                                       value={props.data.bod}
                                       onChange={props.handleChange}
+                                      placeholder="dd/mm/yyyy"
                                     />
                                   </div>
                                 </div>
@@ -201,13 +200,8 @@ function AddPatient(props) {
                                       onChange={props.handleChange}
                                     >
                                       <option value="">--Select an option--</option>
-                                      <option value="option1">Option 1</option>
-                                      <option value="option2">Option 2</option>
-                                      <option value="option3">Option 3</option>
-                                      <option value="option4">Option 4</option>
-                                      <option value="option5">Option 5</option>
-                                      <option value="option6">Option 6</option>
-                                      <option value="option7">Option 7</option>
+                                      <option value="Male">Male</option>
+                                      <option value="Female">Female</option>
                                     </select>
                                   </div>
                                   <div className="form-group p-0">
@@ -290,6 +284,7 @@ function AddPatient(props) {
                                       name="phonePeriode"
                                       value={props.data.phonePeriode}
                                       onChange={props.handleChange}
+                                      placeholder="ex: 2 years"
                                     />
                                   </div>
                                   <div className="form-group p-0">
@@ -298,6 +293,7 @@ function AddPatient(props) {
                                       name="photo"
                                       value={props.data.photo}
                                       onChange={props.handleChange}
+                                      placeholder="photo path string"
                                     />
                                   </div>                
                                 </div>
@@ -325,6 +321,7 @@ function AddPatient(props) {
                                       name="phoneNo"
                                       value={props.data.phoneNo}
                                       onChange={props.handleChange}
+                                      placeholder="ex: +62967860316"
                                     />
                                   </div>
                                   <div className="form-group p-0">
@@ -370,13 +367,11 @@ function AddPatient(props) {
                                       onChange={props.handleChange}
                                     >
                                       <option value="">--Select an option--</option>
-                                      <option value="option1">Option 1</option>
-                                      <option value="option2">Option 2</option>
-                                      <option value="option3">Option 3</option>
-                                      <option value="option4">Option 4</option>
-                                      <option value="option5">Option 5</option>
-                                      <option value="option6">Option 6</option>
-                                      <option value="option7">Option 7</option>
+                                      <option value="Home">Home</option>
+                                      <option value="Office">Office</option>
+                                      <option value="Apartment">Apartment</option>
+                                      <option value="Rental House">Rental House</option>
+                                      <option value="Campus Dormitory">Campus Dormitory</option>
                                     </select>
                                   </div>
                                   <div className="form-group p-0">
@@ -387,13 +382,13 @@ function AddPatient(props) {
                                       onChange={props.handleChange}
                                     >
                                       <option value="">--Select an option--</option>
-                                      <option value="option1">Option 1</option>
-                                      <option value="option2">Option 2</option>
-                                      <option value="option3">Option 3</option>
-                                      <option value="option4">Option 4</option>
-                                      <option value="option5">Option 5</option>
-                                      <option value="option6">Option 6</option>
-                                      <option value="option7">Option 7</option>
+                                      <option value="Indonesia">Indonesia</option>
+                                      <option value="Malaysia">Malaysia</option>
+                                      <option value="Singapore">Singapore</option>
+                                      <option value="Thailand">Thailand</option>
+                                      <option value="Vietnam">Vietnam</option>
+                                      <option value="Philippines">Philippines</option>
+                                      <option value="Brunei Darussalam">Brunei Darussalam</option>
                                     </select>
                                   </div>
                                   <div className="form-group p-0">
@@ -404,13 +399,13 @@ function AddPatient(props) {
                                       onChange={props.handleChange}
                                     >
                                       <option value="">--Select an option--</option>
-                                      <option value="option1">Option 1</option>
-                                      <option value="option2">Option 2</option>
-                                      <option value="option3">Option 3</option>
-                                      <option value="option4">Option 4</option>
-                                      <option value="option5">Option 5</option>
-                                      <option value="option6">Option 6</option>
-                                      <option value="option7">Option 7</option>
+                                      <option value="Jakarta">Jakarta</option>
+                                      <option value="Kuala Lumpur">Kuala Lumpur</option>
+                                      <option value="Bangkok">Bangkok</option>
+                                      <option value="Singapore">Singapore</option>
+                                      <option value="Hanoi">Hanoi</option>
+                                      <option value="Manila">Manila</option>
+                                      <option value="Yogyakarta">Yogyakarta</option>
                                     </select>
                                   </div>
                                   <div className="form-group p-0">
@@ -439,13 +434,8 @@ function AddPatient(props) {
                                       onChange={props.handleChange}
                                     >
                                       <option value="">--Select an option--</option>
-                                      <option value="option1">Option 1</option>
-                                      <option value="option2">Option 2</option>
-                                      <option value="option3">Option 3</option>
-                                      <option value="option4">Option 4</option>
-                                      <option value="option5">Option 5</option>
-                                      <option value="option6">Option 6</option>
-                                      <option value="option7">Option 7</option>
+                                      <option value="Permanent">Permanent</option>
+                                      <option value="Temporary">Temporary</option>
                                     </select>
                                   </div>
                                   <div className="form-group p-0">
@@ -530,8 +520,8 @@ function AddPatient(props) {
                                       onChange={props.handleChange}
                                     >
                                       <option value="">--Select an option--</option>
-                                      <option value="option1">Option 1</option>
-                                      <option value="option2">Option 2</option>
+                                      <option value="Real Name">Real Name</option>
+                                      <option value="Alias">Alias</option>
                                       <option value="option3">Option 3</option>
                                       <option value="option4">Option 4</option>
                                       <option value="option5">Option 5</option>
@@ -545,6 +535,7 @@ function AddPatient(props) {
                                       name="prefixR"
                                       value={props.data.prefixR}
                                       onChange={props.handleChange}
+                                      placeholder="ex: Mr"
                                     />
                                   </div>
                                   <div className="form-group p-0">
@@ -553,6 +544,7 @@ function AddPatient(props) {
                                       name="suffixR"
                                       value={props.data.suffixR}
                                       onChange={props.handleChange}
+                                      placeholder="ex: B.Sc."
                                     />
                                   </div>
                                 </div>
@@ -596,13 +588,8 @@ function AddPatient(props) {
                                       onChange={props.handleChange}
                                     >
                                       <option value="">--Select an option--</option>
-                                      <option value="option1">Option 1</option>
-                                      <option value="option2">Option 2</option>
-                                      <option value="option3">Option 3</option>
-                                      <option value="option4">Option 4</option>
-                                      <option value="option5">Option 5</option>
-                                      <option value="option6">Option 6</option>
-                                      <option value="option7">Option 7</option>
+                                      <option value="Male">Male</option>
+                                      <option value="Female">Female</option>
                                     </select>
                                   </div>
                                   <div className="form-group p-0">
@@ -646,13 +633,11 @@ function AddPatient(props) {
                                       onChange={props.handleChange}
                                     >
                                       <option value="">--Select an option--</option>
-                                      <option value="option1">Option 1</option>
-                                      <option value="option2">Option 2</option>
-                                      <option value="option3">Option 3</option>
-                                      <option value="option4">Option 4</option>
-                                      <option value="option5">Option 5</option>
-                                      <option value="option6">Option 6</option>
-                                      <option value="option7">Option 7</option>
+                                      <option value="Home">Home</option>
+                                      <option value="Office">Office</option>
+                                      <option value="Apartment">Apartment</option>
+                                      <option value="Rental House">Rental House</option>
+                                      <option value="Campus Dormitory">Campus Dormitory</option>
                                     </select>
                                   </div>
                                   <div className="form-group p-0">
@@ -663,13 +648,13 @@ function AddPatient(props) {
                                       onChange={props.handleChange}
                                     >
                                       <option value="">--Select an option--</option>
-                                      <option value="option1">Option 1</option>
-                                      <option value="option2">Option 2</option>
-                                      <option value="option3">Option 3</option>
-                                      <option value="option4">Option 4</option>
-                                      <option value="option5">Option 5</option>
-                                      <option value="option6">Option 6</option>
-                                      <option value="option7">Option 7</option>
+                                      <option value="Indonesia">Indonesia</option>
+                                      <option value="Malaysia">Malaysia</option>
+                                      <option value="Singapore">Singapore</option>
+                                      <option value="Thailand">Thailand</option>
+                                      <option value="Vietnam">Vietnam</option>
+                                      <option value="Philippines">Philippines</option>
+                                      <option value="Brunei Darussalam">Brunei Darussalam</option>
                                     </select>
                                   </div>
                                   <div className="form-group p-0">
@@ -680,13 +665,13 @@ function AddPatient(props) {
                                       onChange={props.handleChange}
                                     >
                                       <option value="">--Select an option--</option>
-                                      <option value="option1">Option 1</option>
-                                      <option value="option2">Option 2</option>
-                                      <option value="option3">Option 3</option>
-                                      <option value="option4">Option 4</option>
-                                      <option value="option5">Option 5</option>
-                                      <option value="option6">Option 6</option>
-                                      <option value="option7">Option 7</option>
+                                      <option value="Jakarta">Jakarta</option>
+                                      <option value="Kuala Lumpur">Kuala Lumpur</option>
+                                      <option value="Bangkok">Bangkok</option>
+                                      <option value="Singapore">Singapore</option>
+                                      <option value="Hanoi">Hanoi</option>
+                                      <option value="Manila">Manila</option>
+                                      <option value="Yogyakarta">Yogyakarta</option>
                                     </select>
                                   </div>
                                   <div className="form-group p-0">
@@ -765,13 +750,8 @@ function AddPatient(props) {
                                       onChange={props.handleChange}
                                     >
                                       <option value="">--Select an option--</option>
-                                      <option value="option1">Option 1</option>
-                                      <option value="option2">Option 2</option>
-                                      <option value="option3">Option 3</option>
-                                      <option value="option4">Option 4</option>
-                                      <option value="option5">Option 5</option>
-                                      <option value="option6">Option 6</option>
-                                      <option value="option7">Option 7</option>
+                                      <option value="Permanent">Permanent</option>
+                                      <option value="Temporary">Temporary</option>
                                     </select>
                                   </div>
                                   <div className="form-group p-0">
@@ -842,7 +822,7 @@ function AddPatient(props) {
                       <div className="tab-pane fade show  pt-4" id="others" role="tabpanel" aria-labelledby="others-tab">
                         <div className="row mb-3">
                           <div className="col-md-12 px-4">
-                            <form className="px-4 py-2"  method="post" action="">
+                            <form className="px-4 py-2"  onSubmit={props.handleSubmit}>
                               <div className="form-group p-0">
                                 <label>Language</label>
                                 <select className="form-control form-control-sm select2" style={{width: '100%'}}
@@ -850,19 +830,19 @@ function AddPatient(props) {
                                   value={props.data.languageR}
                                   onChange={props.handleChange}
                                 >
-                                  <option value="option1" defaultValue>Option 1</option>
-                                  <option value="option2">Option 2</option>
-                                  <option value="option3">Option 3</option>
-                                  <option value="option4">Option 4</option>
-                                  <option value="option5">Option 5</option>
-                                  <option value="option6">Option 6</option>
-                                  <option value="option7">Option 7</option>
+                                  <option value="">--Select an option--</option>
+                                  <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                                  <option value="Bahasa Melayu">Bahasa Melayu</option>
+                                  <option value="English">English</option>
+                                  <option value="Thai Language">Thai Language</option>
+                                  <option value="Tagalog">Tagalog</option>
+                                  <option value="Chinese Language">Chinese Language</option>
                                 </select>
                               </div>
                               <div className="form-group p-0">
                                 <label className="d-block" style={{marginTop: '20px !important'}}>Prefered</label>
                                 <label className="container-radio d-inline">Yes
-                                  <input type="radio" checked={true} 
+                                  <input type="radio" 
                                     name="prefered"
                                     value="true"
                                     checked={props.data.prefered === "true"}
@@ -890,9 +870,7 @@ function AddPatient(props) {
                                   <a className="btn btn-secondary btn-sm mr-2 " style={{color: '#fff !important'}}>
                                     Cancel
                                   </a>
-                                  <a className="btn btn-primary btn-sm " onClick={props.handleClick} style={{color: '#fff !important'}}>
-                                    Save
-                                  </a>
+                                  <input type="submit" value="Save" className="btn btn-primary btn-sm " style={{color: '#fff !important'}} />
                                 </div>
                               </div>
                             </form>
