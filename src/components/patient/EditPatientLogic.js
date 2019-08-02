@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import AddPatient from './AddPatient'
+import EditPatient from './EditPatient'
 
-class AddPatientLogic extends Component {
+class EditPatientLogic extends Component {
   constructor() {
     super()
     this.state = {
@@ -52,16 +52,15 @@ class AddPatientLogic extends Component {
       contactUseR: "",
       rankUseR: "",
       contactNoR: "",
-      addressTypeR: "",
       addressUseR: "",
-      fullAddressR: "",
-      addressPeriodeR: "",
       countryR: "",
       stateR: "",
       cityR: "",
       districtR: "",
       lineR: "",
       postalCodeR: "",
+      fullAddressR: "",
+      addressPeriodeR: "",
       languageR: "",
       prefered: ""
     }
@@ -98,12 +97,16 @@ class AddPatientLogic extends Component {
     patientData.languageR = this.state.languageR
     patientData.prefered = this.state.prefered
 
-    console.log(patientData) 
+    // console.log(patientData)
+    // get id from url parameter 
+    const {match: {params}} = this.props
+    var paramsId = params.id
+    var id = paramsId.substring(1)
 
-    axios.post('http://localhost:3000/api/patients', patientData)
+    axios.put(`http://localhost:3000/api/patients/${id}`, patientData)
       .then(response => {
         console.log(response.data)
-        alert('data submitted')
+        alert('data edited')
       })
       .catch(error => {
         console.log(error)    
@@ -112,15 +115,24 @@ class AddPatientLogic extends Component {
   }
 
   render() {    
+    // const {match: {params}} = this.props
+    // var paramsId = params.id
+    // var id = paramsId.substring(1)
+
+    // var patients = sessionStorage.getItem("apiData")
+    // patients = JSON.parse(patients)
+    // const obj = patients.filter(patients => patients.id === id)
+
     return (
-      <AddPatient 
+      <EditPatient 
         handleChange={this.handleChange}
         handleClick={this.handleClick}  
         handleSubmit={this.handleSubmit}
         data={this.state}
+        // obj={obj}
       />
     )
   }
 }
 
-export default AddPatientLogic
+export default EditPatientLogic

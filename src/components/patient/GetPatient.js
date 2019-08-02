@@ -22,11 +22,19 @@ class GetPatient extends Component {
     })
   }
 
+  handleClick = (id) => {
+    var myIndex = id
+    sessionStorage.setItem("index", myIndex)
+    console.log(myIndex)
+  }
+
   render() {
-    console.log(this.state.patients)
+    sessionStorage.setItem("apiData", JSON.stringify(this.state.patients))
     return (
       <Patient 
         patients = {this.state.patients}
+        handleClick = {this.handleClick}
+        myIndex = {this.myIndex}
       />
     )
   }

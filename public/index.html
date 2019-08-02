@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="dist/css/custom.css"></li>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap4.min.css">
-    <link rel="stylesheet" href="dist/vendor/bootstrap-daterangepicker/daterangepicker.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <title>Medis247</title>
   </head>
@@ -28,7 +27,6 @@
     <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap4.min.js"></script>
     <script type="text/javascript" src="dist/vendor/select2/js/select2.min.js"></script>
     <script src="dist/vendor/moment/min/moment.min.js"></script>
-    <script src="dist/vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         $('#example').DataTable();
@@ -151,11 +149,7 @@
         navLink2.textContent = 'Administrator'; 
         navLink3.textContent = 'Dashboard';
         navLink4.textContent = 'Patient'; 
-        navLink5.textContent = 'Practitioner';  
-        $('#settings').addClass('active')
-        $('#administartion').addClass('active')
-        $('#patient').addClass('active')
-        $('#practitioner').addClass('active')
+        navLink5.textContent = 'Practitioner';
 
         menuIcon.classList.remove('loading');
         menuIcon2.classList.remove('loading');

@@ -4,7 +4,7 @@ import Sidebar from '../Sidebar'
 import ModalDeleteOpex from '../ModalDeleteOpex'
 import Notification from '../Notification'
 
-const Patient = ({patients}) => {
+const Patient = (props) => {
   return (
     <div className="container-fluid d-flex p-0">
       <Sidebar />
@@ -39,7 +39,7 @@ const Patient = ({patients}) => {
                           </tr>
                         </thead>
                         <tbody>
-                          { (patients.length > 0) ? patients.map( (patient, index) => {
+                          { (props.patients.length > 0) ? props.patients.map( (patient, index) => {
                             return (
                               <tr key={ index }>
                                 <td className="name-width">{patient.fullName}</td>
@@ -52,17 +52,17 @@ const Patient = ({patients}) => {
                                     <i className="mdi mdi-dots-horizontal"></i>
                                   </a>
                                   <div className=" dropright dropdown-menu">
-                                    <Link className="dropdown-item" to="/patient-view">
+                                    <Link className="dropdown-item" to={`/patient-view/:${patient.id}`}>
                                       <i className="mdi mdi-eye mr-2"></i>Views
                                     </Link>
                                   <div className="dropdown-divider"></div>
-                                    <Link className="dropdown-item" to="/patient-edit">
+                                    <Link className="dropdown-item" to={`/patient-edit/:${patient.id}`} onClick={() => props.handleClick(index)}>
                                       <i className="mdi mdi-pencil mr-2"></i>Edit
                                     </Link>
                                   <div className="dropdown-divider"></div>
-                                    <a className="dropdown-item" data-toggle="modal" data-target="#delete-patient" href="#">
+                                    <Link className="dropdown-item" to={`/patient-delete/:${patient.id}`}>
                                       <i className="mdi mdi-delete mr-2"></i>Delete
-                                    </a>
+                                    </Link>
                                   </div>
                                 </td>
                               </tr>
